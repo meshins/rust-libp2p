@@ -82,6 +82,7 @@ impl DecodingError {
         }
     }
 
+    #[allow(dead_code)]
     pub(crate) fn encoding_unsupported(key_type: &'static str) -> Self {
         Self {
             msg: format!("encoding {key_type} key to Protobuf is unsupported"),
